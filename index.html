@@ -652,15 +652,15 @@
             }
         }
 
-        // Sync to cloud
+        // Sync to cloud - CORRECTED URL
         function syncToCloud() {
             if (!navigator.onLine) return;
             
             const status = document.getElementById('syncStatus');
             status.textContent = '⏳ Syncing...';
             
-            // Send data to Cloudflare Worker
-            fetch('https://love-to-do-worker.jofran.workers.dev/sync', {
+            // Send data to Cloudflare Worker - CORRECTED URL WITH jofran81
+            fetch('https://love-to-do-worker.jofran81.workers.dev/sync', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
