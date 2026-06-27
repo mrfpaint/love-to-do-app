@@ -420,9 +420,9 @@
             setInterval(loadData, 10000);
         }
 
-        // Load data from Cloudflare Worker
+        // Load data from Cloudflare Worker - CORRECTED URL
         function loadData() {
-            fetch('https://love-to-do-worker.jofran.workers.dev/getData', {
+            fetch('https://love-to-do-worker.jofran81.workers.dev/getData', {
                 method: 'GET',
                 headers: { 'Content-Type': 'application/json' }
             })
